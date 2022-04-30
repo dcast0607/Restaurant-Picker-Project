@@ -4,8 +4,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.text-primary {
+#text-primary {
     font-size: larger;
+    color: brown;
 }
 
 .btn {

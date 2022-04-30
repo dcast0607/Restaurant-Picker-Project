@@ -32,6 +32,7 @@ var dogFactEl = document.querySelector("#dog-fact");
 var url = "http://dog-api.kinduff.com";
 
 
+
 fetch('http://dog-api.kinduff.com/api/facts?number=5', {
     mode: 'no-cors'
 }).then(response => {
@@ -40,7 +41,8 @@ fetch('http://dog-api.kinduff.com/api/facts?number=5', {
 }) .catch(error => console.log('error', error));
 
 //then(e=> {
-    //e.data.forEach(item => {
+
+      //e.data.forEach(item => {
        // dogFactEl.innerHTML += item.
     //})
 

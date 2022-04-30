@@ -32,11 +32,14 @@ var dogFactEl = document.querySelector("#dog-fact");
 var url = "http://dog-api.kinduff.com";
 
 
-
-fetch('https://cors-anywhere.herokuapp.com/http://dog-api.kinduff.com/api/facts').then(response => {
+fetch('http://dog-api.kinduff.com/api/facts?number=5', {
+    mode: 'no-cors'
+}).then(response => {
     console.log(response);
-    return response.json(); //nest response and allows us to format it
-})//then(e=> {
+    //return response.json(); //nest response and allows us to format it
+}) .catch(error => console.log('error', error));
+
+//then(e=> {
     //e.data.forEach(item => {
        // dogFactEl.innerHTML += item.
     //})

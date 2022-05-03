@@ -1,0 +1,76 @@
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.homepageTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: tan;
+}
+
+.bannerImageContainer {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+
+#dogHeaderImage {
+  width: 1000px;
+  height: 500px;
+  object-fit: contain;
+}
+
+
+.container {
+    background-color: gray;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+#text-primary {
+    font-size: larger;
+    color: white;
+}
+
+.btn {
+    grid-column: span 2;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+  }
+  
+  .btn:hover {
+    background-color: #bbbbbb;
+    color: white;
+  }
+
+  .foodInputContainer {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+
+  .foodInputContentContainer {
+    width: 58%;
+    background-color: gray;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    padding: 40px;
+  }

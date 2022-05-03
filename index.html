@@ -17,12 +17,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <!-- <script src="https://api.mqcdn.com/sdk/place-search-js/v1.0.0/place-search.js"></script>
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="https://api.mqcdn.com/sdk/place-search-js/v1.0.0/place-search.css"
-    /> -->
     <link href="./Assets/style.css" rel="stylesheet" />
     <title>W.O.O.F. (We Out Of Food!)</title>
   </head>
@@ -30,16 +24,21 @@
   <body>
     <!---->
     <main>
-      <header>W.O.O.F. "We Out Of Food!"</header>
+      <container class="homepageTitle">
+        <h1 class="title">W.O.O.F. "We Out Of Food!" &#128062;</h1>
+      </container>
 
       <!--insert <img> tag for jumbotron placeholder-->
-      <div class="jumbotron">
-        <img
-          class="jim img-fluid"
-          src="./assets/jim.jpg"
-          alt="Doggy Jumbotron"
-        />
-      </div>
+      <container class="bannerImageContainer">
+        <div class="jumbotron">
+          <img
+            id="dogHeaderImage"
+            class="jim img-fluid"
+            src="./assets/jim.jpg"
+            alt="Doggy Jumbotron"
+          />
+        </div>
+    </container>
 
       <!--Random dog fact goes here-->
       <div id="dog-fact"></div>

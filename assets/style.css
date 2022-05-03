@@ -1,3 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.waviy {
+  position: relative;
+  align-items: center;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight:bold;
+  color: black;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+  
+main {
+  background-color: bisque
+}
+
+img {
+  width: 500px;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+}
+
 .title {
   text-align: center;
   font-weight: bold;
@@ -15,25 +60,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  margin: 10px;
 }
+
 
 #dogHeaderImage {
   width: 1000px;
   height: 500px;
   object-fit: contain;
-}
+  border-radius: 20px;
+  border: 2px solid black;
+} */
 
 .container {
-  background-color: gray;
+/*   background-color: gray;
   padding: 3rem;
   border-radius: 1rem;
   border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
+  flex-direction: column; */
+
+
+    /* width: fit-content; */
+    width: 500px;
+    background-color: gray;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
 #text-primary {
   font-size: larger;
@@ -52,6 +112,7 @@
   justify-self: center;
   margin-left: 5px;
 }
+
 
 .btn:hover {
   background-color: #bbbbbb;
@@ -85,3 +146,27 @@
   border: 1px solid black;
   margin: 2px;
 }
+  .foodInputContainer {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+  }
+
+  .foodInputContentContainer {
+    width: 500px;
+    background-color: gray;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    padding: 40px;
+  }
+
+/*
+CSS Styling to hide elements when not being used. 
+*/
+  .hideContainer {
+    display: none;
+  }
+

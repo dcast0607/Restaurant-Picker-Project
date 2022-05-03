@@ -60,10 +60,8 @@
         <span style="--i:15">T</span>
         <span style="--i:16">🐩</span>
         <span style="--i:17">:</span>
-        
        </div>
       </div>
-      
       <!--we can insert <div> and class here for search form-->
 
           <div class="container">
@@ -76,9 +74,10 @@
           </form>
         </div>
 
-        <!--Creating separate form to consume user input, what price tier would they like, rating, etc... -->
-        <container class="foodInputContainer">
-          <container class="foodInputContentContainer">
+        <!--Creating separate form to consume user input, what price tier would they like, rating, etc... 
+        Form should only be displayed to the user when the user has selected an address.-->
+        <container id="foodSearchParameters" class="container">
+          <container class="container">
             <form>
               <div>
                 <h3>What type of price level are you looking for?</h3>
@@ -125,10 +124,24 @@
             </form>
         </container>
       </container>
+      <!--End of food options container-->
+
+      <!--Beginning of parks information-->
+      <container class="bannerImageContainer">
+        <div class="jumbotron">
+          <img
+            id="randomDogHeaderImage"
+            class="jim img-fluid"
+            src=""
+            alt="Random doggy picture!"
+          />
+        </div>
+    </container>
+      <!--End of parks information-->
+
   </main>
  
   <!--javascript-->
     <script src="./assets/script.js"></script>
-</body>
-
+  </body>
 </html>
